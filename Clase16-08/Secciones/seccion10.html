@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Por que?</title>
+    <style>
+        body {
+            background-color: rgb(255, 255, 255);
+            margin: 0;
+        }
+        h1{
+            font-size: 30px;
+            text-align: center;
+        }
+        header, footer {
+            text-align: center;
+            background-color: rgb(141, 95, 95);
+        }
+    </style>
+    <link rel="shortcut icon" href="/book.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>UNIDAD 2</h1>
+        <nav style="padding: 25px; letter-spacing: 7px;">
+            <a href="/index.html">Inicio</a>
+            <a href="/about_us.html">Acerca de Nosotros</a>
+            <a href="/why.html">¿Por Que?</a>
+        </nav>
+    </header>
+    <br><br><br><br><br>
+    <main>
+        <section style="text-align:center">
+            <h1>FORMULARIOS</h1>
+            <p>Ahora veremos una forma de intercambiar informacion con el usuario mediante estas cajas de texto y sus botones.</p>
+            <h4>NO PODEMOS PROCESAR LA INFORMACION VIA HTML, DEBEMOS RECURRIR A HERRAMIENTAS BACKEND</h4>
+            <p>Nuevamente, volvamos a donde veniamos, podemos crear formularios via <b>FORM</b></p>
+            <p>En este hay que especificar algunos atributos: </p>
+            <ul>
+                <li>action: la accion que lleva a cabo, mediante
+                    <ul>
+                        <li>form action="correo.com" para enviar a direccion de correo</li>
+                        <li>form action="direccion del archivo" para que lo procese un programa/script</li>
+                    </ul>
+                </li>
+                <br><br>
+                <li>method:El atributo que se encarga de especificar la forma en la que el formulario es enviado
+                    <ul>
+                        <li>method="post", el que usaremos hasta no ver backend</li>
+                        <li>method="get", <b>sorpresa</b></li>
+                    </ul>
+                </li>
+            </ul>
+            <br><br>
+            <p>Ya dentro de form usaremos la etiqueta <b>INPUT</b></p>
+            <p>Nuevamente, tenemos otros atributos para especificar: </p>
+            <ul>
+                <li>type: Para ver que modalidad de elemento de formulario
+                    <ul>
+                        <li>type="text", escribir texto normal</li>
+                        <li>type="password", otorga confidencialidad</li>
+                        <li>type="radio", muestra una casilla pinchable en la pantalla, generalmente se pone de a varios para elegir entre uno, deben tener valor distinto.</li>
+                        <li>type="checkbox", caja de validacion se puede activar o desactivar con solo clickearlo, similar a radio.</li>
+                        <li>type="submit" value="mensaje de la caja a enviar", para enviar toda la informacion previamente elegida, se pone al final del formulario</li>
+                        <li>type="reset" value="mensaje para borrar los cambios", sirve para borrar el formulario por completo para rehacerlo.</li>
+                        <li>type="button", un boton sin uso por ahora, <b>por ahora...</b></li>
+                    </ul>
+                </li>
+                <br>
+                <li>name: de gran importancia para identificarlo en el programa de procesamiento.</li>
+                <li>size: define el tamaño de la caja de texto, si se lo pasa se podra seguir escribiendo pero el texto se movera a la izquierda</li>
+                <li>maxlength: Indica el tamaño <b>maximo</b> del texto, una vez que se llegue a este no se permite seguir escribiendo.</li>
+                <p>size =/= maxlength</p>
+                <li>value: define el valor inicial del campo para darle una idea al usuario de con que rellenarlo.</li>
+                <li>textarea name="name" rows="filas" cols="columnas"> texto predefinido... >/textarea></li>
+            </ul>
+            <p>Alternativa para dar a elegir entre opciones: </p>
+            <ul>
+                <li>Select name="nombre"
+                    <ul>
+                        <li>option (si ponemos selected se pondra esta por defecto)>opcion>/option></li>
+                    </ul>
+                </li>>/select>
+            </ul>
+        </section>
+    </main>
+    <br><br><br><br><br>
+    <footer>
+        <h1>CONTACTO</h1>
+        <a href="https://facebook.com"><img src="/Fotos/facebook.png" alt="facebook" width="35px"></a>
+        <a href="https://twitter.com"><img src="/Fotos/twitter.png" alt="twitter" width="35px"></a>
+        <a href="https://whatsapp.com"><img src="/Fotos/whatsapp.png" alt="whatsapp" width="35px"></a>
+        <a href="https://gmail.com"> <img src="/Fotos/gmail.png" alt="gmail" width="35px"></a>
+        <br>
+        <h2>todos los derechos reservados @2022</h2>
+    </footer>
+</body>
+</html>
