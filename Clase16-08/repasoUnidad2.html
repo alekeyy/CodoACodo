@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repaso</title>
+    <link rel="shortcut icon" href="https://logosmarcas.net/wp-content/uploads/2020/09/Google-Logo.png" type="image/x-icon">
+    <style>
+        h3{
+            text-align: center;
+            color: green;
+        }
+        h1{
+            text-align: center;
+            font-size: 50px;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+        <header>
+            <h1>REPASO</h1>
+            <h3>Tipo Letras</h3>
+            <b>con b/strong sale negrita</b>
+            <br>
+            <i>con i/em sale italica u asi</i>
+            <br>
+            <u>subrayado, casi no se usa debido a que esto se realiza en css</u>
+            <br>
+            <sup>sup para super-indice</sup>
+            <br>
+            <sub>sub para sub-indice</sub>
+            <br>
+            <b>Debemos anidar <em>correctamente</em></b>
+            <br>
+            <font color="FF0000">color rojo</font>
+            <p>la anterior esta en desuso debido a que tambien es algo aplicable via css</p>
+            <h3>Aunque no se vea en la pagina, todas las etiquetas anteriores(excepto p) son elementos <b>en linea</b> por lo que estaban todos en la misma linea, por esto mismo los separe a todos via un br despues de cada sentencia.</h3>
+            <br><br>
+            <h3>Enlaces </h3>
+            <a href="https://www.google.com">Con la etiqueta a adquirimos la funcion de mediante un click en un texto como este u una imagen o cualquier tipo de tiqueta embebida en un 'a' trasladarnos a otro sitio o parte de la pagina.</a>
+            <p>Por ejemplo, intenta tocando la pagina de abajo.</p>
+            <a href="https://www.google.com"><img src="https://logosmarcas.net/wp-content/uploads/2020/09/Google-Logo.png" width="200" alt=""></a>
+            <a href="mailto:carvaale3@gmail.com">Para enviarme un mail.</a>
+            <h3>Formatos Graficos</h3>
+            <p>JPG -> fotografias</p>
+            <p>GIF -> dibujos/animaciones</p>
+            <p>PNG -> optimizacion de fotos y su calidad al cambio de tamaño</p>
+            <p>SVG -> representacion de graficos e imagenes vectoriales.</p>
+            <img src="Google-Logo.png" alt="Logo de Google" width="300">
+            <br><br>
+            <h3>Imagenes en HTML</h3>
+            <p>Tiene una breve explicacion de las imagenes, logos e iconos, como el que se ve en la pestaña de esta pagina.</p>
+            <br><br>
+            <h3>Listas</h3>
+            <h4>Ordenadas</h4>
+            <ol>
+                <li>Esta es la primera</li>
+                <li>Segunda</li>
+                <li>Ya sabras como va la cosa</li>
+                <li>Sirve para enumerar</li>
+            </ol>
+            <ol type="A">
+                <li>Tambien se pueden ordenar via alfabeto</li>
+                <li>tanto en mayuscula como en minuscula</li>
+            </ol>
+            <ol type="I">
+                <li> Vemos que tambien
+                    <li>via numeros romanos, tambien se pueden embebir.</li>
+                </li>
+            </ol>
+            <h4>Desordenadas</h4>
+            <ul>
+                <li>Se ve que</li>
+                <li>Estas claramente no tiene orden</li>
+            </ul>
+            <ul type="circle">
+                <li>Y su tipo de viñeta es cambiante</li>
+            </ul>
+            <ul type="square">
+                <li>Aparte de secciones se pueden cambiar elementos en especifico</li>
+                <li type="circle">como aca</li>
+            </ul>
+            <h4>Listas de definicion</h4>
+            <dl>
+                <dt>Se hacen con dt</dt>
+                    <dd>Y dd</dd>
+            </dl>
+            <p>Probablemente no se note mucho su funcion y debido a esto no se le dara mucho uso.</p>
+            <br><br>
+            <h3>TABLAS</h3>
+            <p>PD: Estas han dejado de utilizarse debido a su falta de correlacion con el desarrollo Responsive, entre otras caracteristicas.</p>
+            <p>Se define por la etiqueta TABLE</p>
+            <p>A esta le sigue la cantidad de filas(row) TR que deseemos utilizar por ejemplo, aca dos(notemos que en la primera usamos la etiqueta TH que es el header de la tabla).</p>
+            <p>Y luego dentro de estas filas la cantidad de celdas TD que asignaremos, y dentro de estas, su contenido</p>
+            <table border="1">
+                <tr>
+                    <th colspan="2">Tabla uno</th>
+                    <th>Contenidos</th>
+                </tr>
+                <tr>
+                    <td colspan="2">Tabla dos</td>
+                    <td>Contenidos 2</td>
+                </tr>
+                <tr>
+                    <td colspan="1">Tabla tres</td>
+                    <td>Contenidos 3</td>
+                </tr>
+            </table>
+            <br><br>
+            <h3>IFRAME</h3>
+            <p>Aunque ya casi obsoleta, esta etiqueta ha permanecido en uso y tiene bastante utilidad que aqui veremos:</p>
+            <p>Sirve para crear un espacio dentro de la pagina donde se puede incrustar otra web, podemos especificar las dimensiones de esta pagina mediante los atributos width y height</p>
+            <p>Algunas de sus utilidades son: </p>
+            <ul>
+                <li>Incrustar videos de Youtube</li>
+                <li>Incrustar mapas de Google maps</li>
+                <li>Banners de publicidad</li>
+                <li>Contenido de terceros e interfaces de usuario.</li>
+            </ul>
+            <p>Ejemplo de comando: </p>
+            <b>"> iframe src="url_a_insertar" width=ancho height=largo> >/iframe>"</b>
+            <br>
+            <b>OBELISCO</b>
+            <br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0168878895174!2d-58.38375908505232!3d-34.603734465005445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses-419!2sar!4v1660690938127!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <br><br>
+            <h3>Elementos</h3>
+            <table border="1">
+                <tr>
+                    <th>En linea/Inline</th>
+                    <th>En Bloque/Block</th>
+                </tr>
+                <tr>
+                    <td>a</td>
+                    <td>div</td>
+                </tr>
+                <tr>
+                    <td>img</td>
+                    <td>p</td>
+                </tr>
+                <tr>
+                    <td>span</td>
+                    <td>h1-h6</td>
+                </tr>
+                <tr>
+                    <td>b</td>
+                    <td>ul-ol-li</td>
+                </tr>
+                <tr>
+                    <td>mark</td>
+                    <td>table</td>
+                </tr>
+                <tr>
+                    <td>etc</td>
+                    <td>form</td>
+                </tr>
+            </table>
+            <br><br>
+            <h3>FORMULARIOS</h3>
+            <p>Ahora veremos una forma de intercambiar informacion con el usuario mediante estas cajas de texto y sus botones.</p>
+            <h4>NO PODEMOS PROCESAR LA INFORMACION VIA HTML, DEBEMOS RECURRIR A HERRAMIENTAS BACKEND</h4>
+            <p>Nuevamente, volvamos a donde veniamos, podemos crear formularios via <b>FORM</b></p>
+            <p>En este hay que especificar algunos atributos: </p>
+            <ul>
+                <li>action: la accion que lleva a cabo, mediante
+                    <ul>
+                        <li>form action="correo.com" para enviar a direccion de correo</li>
+                        <li>form action="direccion del archivo" para que lo procese un programa/script</li>
+                    </ul>
+                </li>
+                <br><br>
+                <li>method:El atributo que se encarga de especificar la forma en la que el formulario es enviado
+                    <ul>
+                        <li>method="post", el que usaremos hasta no ver backend</li>
+                        <li>method="get", <b>sorpresa</b></li>
+                    </ul>
+                </li>
+            </ul>
+            <br><br>
+            <p>Ya dentro de form usaremos la etiqueta <b>INPUT</b></p>
+            <p>Nuevamente, tenemos otros atributos para especificar: </p>
+            <ul>
+                <li>type: Para ver que modalidad de elemento de formulario
+                    <ul>
+                        <li>type="text", escribir texto normal</li>
+                        <li>type="password", otorga confidencialidad</li>
+                        <li>type="radio", muestra una casilla pinchable en la pantalla, generalmente se pone de a varios para elegir entre uno, deben tener valor distinto.</li>
+                        <li>type="checkbox", caja de validacion se puede activar o desactivar con solo clickearlo, similar a radio.</li>
+                        <li>type="submit" value="mensaje de la caja a enviar", para enviar toda la informacion previamente elegida, se pone al final del formulario</li>
+                        <li>type="reset" value="mensaje para borrar los cambios", sirve para borrar el formulario por completo para rehacerlo.</li>
+                        <li>type="button", un boton sin uso por ahora, <b>por ahora...</b></li>
+                    </ul>
+                </li>
+                <br>
+                <li>name: de gran importancia para identificarlo en el programa de procesamiento.</li>
+                <li>size: define el tamaño de la caja de texto, si se lo pasa se podra seguir escribiendo pero el texto se movera a la izquierda</li>
+                <li>maxlength: Indica el tamaño <b>maximo</b> del texto, una vez que se llegue a este no se permite seguir escribiendo.</li>
+                <p>size =/= maxlength</p>
+                <li>value: define el valor inicial del campo para darle una idea al usuario de con que rellenarlo.</li>
+                <li>textarea name="name" rows="filas" cols="columnas"> texto predefinido... >/textarea></li>
+            </ul>
+            <p>Alternativa para dar a elegir entre opciones: </p>
+            <ul>
+                <li>Select name="nombre"
+                    <ul>
+                        <li>option (si ponemos selected se pondra esta por defecto)>opcion>/option></li>
+                    </ul>
+                </li>>/select>
+            </ul>
+            <p>Ahora, el formulario de ejemplo de la pagina: </p>
+            <br><br>
+            <form action="mailto:mail@gmail.com" method="post" enctype="text/plain">
+                Nombre <input type="text" name="nombre" size="30" maxlength="100">
+                <br>
+                Email <input type="text" name="email" size="25" maxlength="100" value="@">
+                <br>
+                Población <input type="text" name="poblacion" size="20" maxlength="60">
+                <br>
+                Sexo
+                <br>
+                <input type="radio" name="sexo" value="Varon" checked> Hombre
+                <br>
+                <input type="radio" name="sexo" value="Mujer"> Mujer
+                <br><br>
+                Frecuencia de los viajes
+                <br>
+                <select name="utilizacion">
+                <option value="1">Varias veces al dia
+                <option value="2">Una vez al dia
+                <option value="3">Varias veces a la semana
+                <option value="4">varias veces al mes
+                </select>
+                <br>
+                <br>
+                Comentarios sobre su satisfacción personal
+                <br>
+                <textarea cols="30" rows="7" name="comentarios"></textarea>
+                <br>
+                <br>  
+                <input type="checkbox" name="recibir_info" checked> Deseo recibir notificación de las novedades en las líneas de autobuses.        
+                <br>
+                <br>                
+                <input type="submit" value="Enviar formulario">
+                <br>
+                <br>
+                <input type="Reset" value="Borrar todo">
+                </form>
+        </header>
+</body>
+</html>
